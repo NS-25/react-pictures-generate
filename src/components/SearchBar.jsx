@@ -1,8 +1,9 @@
 import React from "react";
 
-const SearchBar = () => {
-  const handleFormSubmit = () => {
-    console.log("I need to tell the parent about some data");
+const SearchBar = ({ onSubmit }) => {
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    onSubmit("cars");
   };
   return (
     <div>
