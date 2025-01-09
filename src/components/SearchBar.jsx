@@ -1,13 +1,9 @@
 import React from "react";
 
-const SearchBar = ({ onSubmit }) => {
-  const handleClick = () => {
-    onSubmit("Cars");
-  };
+const SearchBar = () => {
   return (
     <div>
       <input />
-      <button onClick={handleClick}>Click Me</button>
     </div>
   );
 };
