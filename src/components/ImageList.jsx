@@ -1,9 +1,9 @@
 import React from "react";
 
-const ImageList = () => {
+const ImageList = ({ images }) => {
   return (
     <div>
-      <h1>ImageList</h1>
+      <h1>ImageList: {images.length}</h1>
     </div>
   );
 };
