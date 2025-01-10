@@ -4,11 +4,11 @@ import React from "react";
 
 const SearchBar = ({ onSubmit }) => {
   //state part
-  const [term, setTerm] = useState(" ");
+  const [term, setTerm] = useState("cars");
   //event handle for form submit part
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    onSubmit("cars");
+    onSubmit(term);
   };
   // handle change part
   const handelChange = (event) => {
